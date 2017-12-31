@@ -155,6 +155,18 @@
                         android:layout_marginTop="13dp"
                         android:hint="Phone Number"
                         />
+                    <EditText
+                        android:id="@+id/editaddress"
+                        android:layout_below="@+id/editPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:textColorHint="#ce0610"
+                        android:textColor="#ce0610"
+                        android:layout_marginTop="13dp"
+                        android:hint="Address"
+                        />
 
                 </RelativeLayout>
                 <Button
