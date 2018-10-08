@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/blod"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.being_human.AboutFragment">
+    <RelativeLayout
+        android:background="@color/colorOverly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+    <TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="About Us"
+    android:textColor="#FF0000"
+    android:textSize="30dp" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/tvaboutus"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="40dp"
+                android:text="The Blood Donor App is a great new way to help meet the constant need for blood."
+                android:textColor="#ffffff"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvappcando"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvaboutus"
+                android:layout_marginTop="10dp"
+                android:text="The app can do the foloowing:"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvfindDonar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvappcando"
+                android:layout_marginTop="10dp"
+                android:text="1. You can find a donar acording to your blood group."
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/showDonars"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvfindDonar"
+                android:layout_marginTop="5dp"
+                android:text="2: App will show you donars on map according to your location."
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/heading3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/showDonars"
+                android:layout_marginTop="5dp"
+                android:text="3: Donar can see blood request and accept or deny it."
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/helpText"
+                android:layout_below="@+id/heading3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on following numbers and email To report any of the problem we will try to resolve it as soon as possible"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:textSize="18dp"
+                android:gravity="center"
+                android:id="@+id/emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/helpText"
+                android:text="kalsoomirshad9@gmailcom"
+                android:textColor="#0000EE"
+                android:textStyle="bold" />
+            <TextView
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/tvzuni"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="zunairajameel@gmailcom"
+                android:textColor="#0000EE"
+                />
+            <TextView
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/number"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tvzuni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0331-4405955"
+                android:textColor="#0000EE"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2018-2020 BEING HUMAN ALL RIGHTS RESERVED"
+                android:textColor="#FF0000"
+                android:textSize="14dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

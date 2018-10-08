@@ -1,0 +1,37 @@
+CREATE TABLE User(
+    email varchar(255) PRIMARY KEY,
+    pass varchar(255) NOT NULL,
+    name varchar(255) NOT NULL,
+    location varchar(255),
+    address varchar(255) NOT NULL,
+    DOB varchar(255),
+    BG varchar(5),
+    last_donation varchar(255),
+    donar_status varchar (10) default 'false',
+    gender varchar(10),
+    contact varchar(55) NOT NULL,
+    log_status varchar(10) default 'false',
+    availability varchar(10) default 'false',
+    reg_date TIMESTAMP
+);
+
+    
+CREATE TABLE Donation(
+    id int(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    u_email varchar(255),
+    donar_email varchar(255) NOT NULL,
+    afd varchar(10) default 'false',
+    donate_status varchar(10) default 'false',
+    location varchar(255),
+    request_time varchar(100),
+    reg_date TIMESTAMP
+);  
+
+
+CREATE TABLE Report(
+    email varchar(255) NOT NULL,
+    issue varchar(255) NOT NULL,
+    solution varchar(255) NOT NULL,
+    type varchar(10) NOT NULL,
+    reg_time TIMESTAMP
+); 

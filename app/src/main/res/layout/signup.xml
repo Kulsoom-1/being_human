@@ -165,7 +165,7 @@
             android:layout_below="@+id/ParentFields"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:id="@+id/btn_on_sign_up"
+            android:id="@+id/btn_on_sign_up1"
             android:layout_width="170dp"
             android:textAllCaps="false"
             android:layout_height="wrap_content"

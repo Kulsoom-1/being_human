@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ce0610">
+
+    <TextView
+        android:id="@+id/pleasetext"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="Please Select What Type Of User you are?"/>
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/pleasetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:text="Donar"
+        android:textColor="#ce0610"
+        android:gravity="center"
+        android:id="@+id/donarbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/needybutton"
+        android:text="Needy"
+        android:textColor="#ce0610"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/donarbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"/>
+    </RelativeLayout>
+
+</RelativeLayout>

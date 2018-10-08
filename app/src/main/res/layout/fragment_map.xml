@@ -1,0 +1,39 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <include layout="@layout/activity_maps"
+    android:id="@+id/mapfragment"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="150dp"
+    android:layout_width="match_parent"></include>
+
+    <!--<EditText-->
+    <!--android:id="@+id/btn_bloodgroup"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/btn_location"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="Enter Bloodgroup"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textColorHint="#ffffff"-->
+    <!--android:textSize="16dp" />-->
+
+    <EditText
+    android:id="@+id/btn_location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_gravity="center"
+    android:layout_marginBottom="31dp"
+    android:gravity="center"
+    android:hint="Enter Location"
+    android:textColor="#ffffff"
+    android:textColorHint="#ffffff"
+    android:textSize="16dp" />
+</RelativeLayout>

@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "611949724692",
-    "firebase_url": "https://beinghuman-c95e7.firebaseio.com",
-    "project_id": "beinghuman-c95e7",
-    "storage_bucket": "beinghuman-c95e7.appspot.com"
+    "project_number": "467772978892",
+    "firebase_url": "https://shome-189607.firebaseio.com",
+    "project_id": "shome-189607",
+    "storage_bucket": "shome-189607.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:611949724692:android:86cd9de1587fb249",
+        "mobilesdk_app_id": "1:467772978892:android:86cd9de1587fb249",
         "android_client_info": {
           "package_name": "com.example.admin.being_human"
         }
       },
       "oauth_client": [
         {
-          "client_id": "611949724692-r9tqlnap6ofpvnol3nm0u7daq73guecs.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.admin.being_human",
-            "certificate_hash": "8d090cc11aec99210eff2358870b69c06e66d68d"
-          }
-        },
-        {
-          "client_id": "611949724692-10dckn5rccgr0k8697am8elr1t69qijg.apps.googleusercontent.com",
+          "client_id": "467772978892-7u3hiqaupqp0c3jpvtv6qmvlf4igphfe.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCYYADiSs6y3PwAmlo78x9-beKeEsrChhg"
+          "current_key": "AIzaSyBxEaATlAbM7BVfMXh894fciLFV0oZ-4A8"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "611949724692-10dckn5rccgr0k8697am8elr1t69qijg.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

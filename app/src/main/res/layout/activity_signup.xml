@@ -1,53 +1,55 @@
 <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <include
-            android:id="@+id/signupheader"
-            layout="@layout/header"
-            />
+        android:background="@drawable/blod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<include-->
+            <!--android:id="@+id/signupheader"-->
+            <!--layout="@layout/header"-->
+            <!--/>-->
         <RelativeLayout
+            android:id="@+id/containerSignup"
+            android:background="@drawable/blod"
             android:layout_below="@+id/signupheader"
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:id="@+id/parentSignup"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:background="#ce0610">
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/parentSignup"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:background="#ce0610">-->
 
-                <!--<android.support.v4.widget.CircleImageView-->
-                    <!--android:id="@+id/ivProfilePic"-->
-                    <!--android:layout_width="100dp"-->
-                    <!--android:layout_height="100dp"-->
-                    <!--android:layout_above="@+id/textView2"-->
+                <!--&lt;!&ndash;<android.support.v4.widget.CircleImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/ivProfilePic"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="100dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_above="@+id/textView2"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:src="@drawable/mypic" />&ndash;&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
                     <!--android:layout_centerHorizontal="true"-->
                     <!--android:gravity="center"-->
-                    <!--android:scaleType="fitXY"-->
-                    <!--android:src="@drawable/mypic" />-->
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center"
-                    android:textSize="15dp"
-                    android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:text="Kulsoom Irshad"
-                    android:layout_marginBottom="12dp"/>
-            </RelativeLayout>
+                    <!--android:textSize="15dp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="Kulsoom Irshad"-->
+                    <!--android:layout_marginBottom="12dp"/>-->
+            <!--</RelativeLayout>-->
             <RelativeLayout
-                android:background="#ffffff"
-                android:layout_below="@+id/parentSignup"
+                android:background="@color/colorOverly"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <RelativeLayout
@@ -60,37 +62,38 @@
                         android:gravity="center"
                         android:id="@+id/textSignup"
                         android:text="Sign Up Form"
-                        android:textColor="#ce0610"
+                        android:textColor="@color/colorWhite"
                         android:textSize="20dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textSignup"
                         android:gravity="center"
+                        android:textSize="18dp"
                         android:text="fill out the following fields"
-                        android:textColor="#ce0610"
+                        android:textColor="@color/colorWhite"
                         />
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_below="@+id/layoutSignupMessage"
                     android:padding="20dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:id="@+id/ParentFields">
-                    <EditText
+                    <Spinner
+                        android:backgroundTint="@color/colorWhite"
                         android:id="@+id/editBloodGroup"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="13dp"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:hint="Blood Group"
-                        android:textColorHint="#ce0610"
-                        android:textColor="#ce0610"
+                        android:textColor="@color/colorWhite"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:spinnerMode="dropdown"
                         />
 
                     <EditText
+                        android:backgroundTint="@color/colorWhite"
                         android:layout_below="@+id/editBloodGroup"
                         android:id="@+id/editName"
                         android:layout_width="match_parent"
@@ -98,12 +101,13 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="13dp"
                         android:ems="10"
-                        android:textColorHint="#ce0610"
-                        android:textColor="#ce0610"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
                         android:inputType="textPersonName"
                         android:hint="Name" />
 
                     <EditText
+                        android:backgroundTint="@color/colorWhite"
                         android:id="@+id/editAge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -112,25 +116,72 @@
                         android:layout_below="@+id/editName"
                         android:layout_marginTop="13dp"
                         android:ems="10"
-                        android:textColorHint="#ce0610"
-                        android:textColor="#ce0610"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
                         android:hint="Age"
                         android:inputType="number" />
-
-                    <EditText
-                        android:id="@+id/editCity"
-                        android:layout_width="match_parent"
+                    <TextView
+                       android:textSize="19dp"
+                        android:id="@+id/editGender"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/editAge"
                         android:layout_marginTop="13dp"
                         android:ems="10"
-                        android:textColorHint="#ce0610"
-                        android:textColor="#ce0610"
-                        android:hint="City"
-                        android:inputType="textPersonName" />
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
+                        android:hint="Gender"
+                        android:inputType="number" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@+id/editGender"
+                        android:layout_marginTop="13dp"
+                        android:layout_below="@+id/editAge"
+                        android:id="@+id/parentRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioGroup
+                            android:id="@+id/gen"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                    <RadioButton
+                        android:buttonTint="@color/colorWhite"
+                        android:id="@+id/radioGenderMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="@color/colorWhite"/>
+                    <RadioButton
+                        android:buttonTint="@color/colorWhite"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/radioGenderFemale"
+                        android:layout_toRightOf="@+id/radioGenderMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="@color/colorWhite"/>
+                        </RadioGroup>
+                    </RelativeLayout>
+
                     <EditText
+                        android:backgroundTint="@color/colorWhite"
+                        android:id="@+id/editCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/parentRadio"
+                        android:layout_marginTop="13dp"
+                        android:ems="10"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
+                        android:hint="City"
+                        android:inputType="text" />
+                    <EditText
+                        android:backgroundTint="@color/colorWhite"
                         android:id="@+id/editDonation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -138,52 +189,108 @@
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/editCity"
                         android:layout_marginTop="13dp"
-                        android:textColorHint="#ce0610"
-                        android:textColor="#ce0610"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
                         android:ems="10"
                         android:hint="Last Doantion"
                         android:inputType="date" />
                     <EditText
+                        android:backgroundTint="@color/colorWhite"
                         android:id="@+id/editPhone"
                         android:layout_below="@+id/editDonation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="phone"
-                        android:textColorHint="#ce0610"
-                        android:textColor="#ce0610"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
                         android:layout_marginTop="13dp"
                         android:hint="Phone Number"
                         />
                     <EditText
+                        android:backgroundTint="@color/colorWhite"
                         android:id="@+id/editaddress"
                         android:layout_below="@+id/editPhone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:inputType="phone"
-                        android:textColorHint="#ce0610"
-                        android:textColor="#ce0610"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
                         android:layout_marginTop="13dp"
                         android:hint="Address"
                         />
+                    <EditText
+                        android:backgroundTint="@color/colorWhite"
+                        android:id="@+id/editemail"
+                        android:layout_below="@+id/editaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
+                        android:layout_marginTop="13dp"
+                        android:hint="Email"
+                        />
+                    <EditText
+                        android:backgroundTint="@color/colorWhite"
+                        android:id="@+id/editpassword"
+                        android:layout_below="@+id/editemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="#ff0c35"
+                        android:layout_marginTop="13dp"
+                        android:hint="Password"
+                        />
+                    <CheckBox
+                        android:theme="@style/MyCheckBox"
+                        android:id="@+id/chkbxDonar"
+                        android:layout_marginTop="13dp"
+                        android:ems="10"
+                        android:layout_below="@+id/editpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Register me as a donar as well?"
+                        android:textColor="#ff0c35"/>
 
                 </RelativeLayout>
-                <Button
-                    android:textSize="16dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginBottom="13dp"
-                    android:layout_below="@+id/ParentFields"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:id="@+id/btn_on_sign_up"
-                    android:layout_width="170dp"
-                    android:textAllCaps="false"
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:background="@drawable/buttons"
-                    android:text="Sign Up"
-                    />
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ParentFields"
+                    android:layout_marginTop="46dp">
+
+                    <Button
+                        android:id="@+id/btn_on_sign_up"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/buttons"
+                        android:onClick="Onclick"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="20dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
 
             </RelativeLayout>
         </RelativeLayout>

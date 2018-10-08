@@ -6,4 +6,5 @@
     <color name="colorThemeBackground">#000000</color>
     <color name="colorBoxes">#e9e9e9</color>
     <color name="colorOverly">#aa000000</color>
+    <color name="colorWhite">#ffffff</color>
 </resources>
